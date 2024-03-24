@@ -6,7 +6,5 @@ import java.util.UUID;
 public interface IUserRepository 
     extends org.springframework.data.jpa.repository.JpaRepository<UserModel, UUID> {
 
-    
-
-    
+    UserModel findByUsername(String username);    
 }
