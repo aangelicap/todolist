@@ -2,6 +2,9 @@
 mini-curso de java - rocketseat
 
 
-Run project: nvm clean installmvn clean compile exec:java
+Install and compile project: nvm clean install 
+    mvn clean compile exec:java
+
+Run project: mvn spring-boot:run
 
 Database: http://localhost:8080/h2-console

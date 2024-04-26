@@ -29,4 +29,12 @@ public class TaskModel {
 
     @CreationTimestamp
     private LocalDateTime createdAt;
+
+    public void setTile(String tile) throws Exception {
+        if(title.length() > 50){
+            throw new Exception("O campo titulo deve conter no máximo 50 caracteres");
+        }
+        this.title = title;
+    }
 }
+
